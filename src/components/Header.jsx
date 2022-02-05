@@ -1,8 +1,6 @@
 import React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import PhoneIcon from '@mui/icons-material/Phone';
-import ArchiveIcon from '@mui/icons-material/Archive';
 import Box from '@mui/material/Box';
 
 const Header = ({view, handleChange}) => {
@@ -25,10 +23,10 @@ const Header = ({view, handleChange}) => {
       </svg>
 
       <Box >
-          <Tabs value={view} onChange={handleChange} centered aria-label="icon label tabs">
-            <Tab sx={{fontSize: "0.75rem"}} icon={<PhoneIcon />} label="Recents" />
-            <Tab sx={{fontSize: "0.75rem"}} icon={<ArchiveIcon />} label="Archived" />
-          </Tabs>
+        <Tabs value={view} onChange={handleChange} centered aria-label="icon label tabs">
+          <Tab sx={{fontSize: "0.75rem"}}  label="Inbox" />
+          <Tab sx={{fontSize: "0.75rem"}} label="Archived" />
+        </Tabs>
       </Box>
 
     </header>
